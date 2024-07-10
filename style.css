@@ -1,0 +1,112 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Disabilita lo scroll verticale e abilita lo scroll fluido */
+html {
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+}
+
+/* Imposta il font di default per il body */
+body {
+    font-family: 'Rubik Mono One', sans-serif;
+}
+
+/* Visualizza gli elementi della lista in linea e rimuove i punti elenco */
+ul {
+    display: flex;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Main */
+/* Impostazioni generali per le sezioni principali */
+.main-section {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+/* Impostazioni per il contenuto all'interno delle sezioni principali */
+.content {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+/* Impostazioni per le immagini */
+img {
+    height: 350px;
+}
+
+/* Impostazioni per i titoli */
+h1 {
+    font-size: 30px;
+    color: #FFFF00;
+    font-weight: bold;
+    font-family: 'Rubik Mono One', sans-serif;
+}
+
+#yellow-page h1 {
+    color: green;
+}
+
+#red-page {
+    background-color: red;
+}
+
+#green-page {
+    background-color: green;
+}
+
+#yellow-page {
+    background-color: yellow;
+}
+
+/* Navigation Menu */
+.side-menu {
+    display: flex;
+    position: fixed;
+    top: 30px;
+    right: 10px;
+    gap: 20px;
+    text-align: center;
+}
+
+/* Impostazioni per i link all'interno del menu di navigazione */
+.side-menu a {
+    color: black;
+    background-color: white;
+    font-size: 13px;
+    display: inline-block;
+    margin-right: 30px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-shadow: 0px 0px 1px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Effetto hover per i link nel menu di navigazione */
+.side-menu a:hover {
+    transform: scale(1.1);
+}
+
+/* Effetto active per i link nel menu di navigazione */
+.side-menu a:active {
+    transform: scale(1);
+}
